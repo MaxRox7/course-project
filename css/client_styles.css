@@ -1,0 +1,65 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовки */
+h2 {
+    color: #007BFF;
+}
+
+.booking-block {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Статусы заказов */
+.status-completed {
+    color: green;
+}
+
+.status-in-progress {
+    color: orange;
+}
+
+.status-pending {
+    color: red;
+}
+
+/* Формы */
+form {
+    margin-top: 10px;
+}
+
+/* Кнопки */
+.btn-close,
+.btn-start,
+.btn-back {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-close:hover,
+.btn-start:hover,
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+/* Сообщения об ошибках */
+.error-message {
+    color: red;
+    margin-top: 15px;
+}

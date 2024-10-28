@@ -1,0 +1,155 @@
+:root {
+    --navy: #001f3f;
+    --cloud: #f0f8ff;
+    --periwinkle: #ccccff;
+    --white: #ffffff;
+    --gray: #f2f2f2;
+    --dark-gray: #333333;
+    --accent: #007BFF;
+}
+
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* Заголовок
+ Шапка и навигация  */
+ header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Навигация */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 10px 15px; /* Добавлены отступы */
+    border-radius: 5px; /* Края закруглены */
+    transition: background 0.3s ease, text-decoration 0.3s ease; /* Плавный переход */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Подсветка фона при наведении */
+}
+
+
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Заголовки */
+.container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Отзывы */
+.review {
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.client-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333333;
+}
+
+.rating {
+    color: #f39c12;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.additional-info {
+    font-size: 0.9em;
+    color: #777777;
+}
+
+/* Звезды */
+.star {
+    color: #cccccc;
+    font-size: 1.2em;
+    margin-right: 2px;
+}
+
+.star.filled {
+    color: #f39c12;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    .client-name {
+        font-size: 1em;
+    }
+    .review-text {
+        font-size: 0.9em;
+    }
+    .rating {
+        font-size: 0.9em;
+    }
+    .additional-info {
+        font-size: 0.8em;
+    }
+}

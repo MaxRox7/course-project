@@ -1,0 +1,147 @@
+/* css/styles.css */
+
+/* Цветовая гамма */
+:root {
+    --navy: #001f3f;
+    --cloud: #f0f8ff;
+    --periwinkle: #ccccff;
+    --white: #ffffff;
+    --gray: #f2f2f2;
+    --dark-gray: #333333;
+    --accent: #007BFF;
+}
+
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cloud);
+    color: var(--dark-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Навигация */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Блок бронирования */
+.booking-block {
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cloud);
+}
+
+.booking-block h3 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.booking-block p {
+    margin: 5px 0;
+}
+
+.booking-block h4 {
+    margin: 10px 0;
+    color: var(--accent);
+}
+
+/* Форма отзыва */
+.booking-block form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-block textarea {
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+
+.booking-block select {
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.booking-block button {
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.booking-block button:hover {
+    background-color: #0056b3;
+}
+
+/* Сообщения */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Футер */
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}

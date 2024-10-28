@@ -1,0 +1,177 @@
+:root {
+    --navy: #001f3f;
+    --cloud: #f0f8ff;
+    --periwinkle: #ccccff;
+    --white: #ffffff;
+    --gray: #f2f2f2;
+    --dark-gray: #333333;
+    --accent: #007BFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking block styles */
+.booking-block {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s;
+}
+
+.booking-block:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-block h3 {
+    color: #007bff;
+}
+
+/* Form styles */
+form {
+    margin-top: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Error message styles */
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    textarea {
+        height: 60px;
+    }
+}
+
+a.client-link {
+    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #3b1b54; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+a.client-link::after {
+    content: ''; /* Псевдоэлемент */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Начинаем от левого края */
+    bottom: 0; /* Находимся внизу текста */
+    width: 100%; /* Полная ширина */
+    height: 2px; /* Высота линии подчеркивания */
+    background: linear-gradient(90deg, #4b26b1, #934cca); /* Градиент */
+    transform: scaleX(0); /* Начальное значение для эффекта */
+    transition: transform 0.3s ease; /* Плавный переход для эффекта */
+}
+
+a.client-link:hover {
+    color: #6c70d0; /* Изменение цвета текста при наведении */
+}
+
+a.client-link:hover::after {
+    transform: scaleX(1); /* Подчеркивание растягивается при наведении */
+}
